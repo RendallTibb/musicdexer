@@ -6,3 +6,5 @@ Musicdexer
 ==========
 
 Usedl KDevelop4, QT Designer4, cmake, taglib(libtag1-dev), and MySQL. Table creation is listed at the bottom of musicdexer.cpp. I cannot guarantee the safety of your mp3 tag data so please replace /home/randy/Music/ with a testing directory. This appears 3 times in musicdexer.cpp and once in customqsqltablemodel.cpp. You also need to enter your database connection credentials(currently left blank) in musicdexer.cpp.
+
+![Musicdexer Preview](res/musicdexer.png)
