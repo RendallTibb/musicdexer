@@ -1,0 +1,41 @@
+
+### Bugs ###
+
+ - Add-to/Change will not update results under all conditions.
+ - Japanese characters from tags appear as black diamond question mark characters.
+ - No Search formatting, i.e., entering a time of 1:30 would have an undesired result.
+ - Formatting for rare cases, e.g., add GB, 3 digit track numbers, hour long songs.
+ - Missing paths showing up red might not be best solution for colorblind.
+
+### Tests ###
+
+ - Sync Test: Create an mp3 file and run it through sync successively while changing aspects of file externally. May also create a second file that is similar to the first.
+ - Performance Test: Create a test music directory with a large amount of random sub-directories and music files with tag data. Test time of program's sync, search, change, add to.
+ Note: These tests have been manually preformed. Need to Create automated versions.
+
+### Desired Features ###
+
+ - Simple playlist creation based off search results using common .m3u format.
+ - Advanced playlist creation: Add a window with current working playlist. Can add entire search results to it or selected files from results or double clicking a file.
+ - Able to copy files in music directory based on a playlist or search to a device or intermediate folder.
+ - More advanced search: Multiple search filters
+ - Improve UI for appearance and ease of use. Could add custom skins.
+ - Improve Sync performance by limiting SQL statements. 3000 files takes about 5 minutes for first Sync.
+ - Open files in Musicdexer collection using default(or specified) music player.
+ - Auto-Complete or drop-down menus for fields. For TextBoxes and TableView.
+ - Multiple music directories.
+ - Add more user categories or allow users to add their own(would change db structure and increase size)
+ - Easier db backup.
+ - Duplicate Handling
+ - Help dialogues and documentation. First use help message or where to find it.
+ - About
+ - Ability to search/modify Shift/Ctrl selected tracks in collection results.
+ - More sync notifications, and may want user prompts for special cases in Sync.
+ - Display album art
+ - Automatic tag updating using online sources.
+ - More advanced tag editing.
+ - Media burning. Label printing.
+ - Result/playlist Print support.
+ - An in-house player.
+ - Find or create a song analyzer that determines a mood automatically.
+ - Relational database for performance and storage improvements for large collections.

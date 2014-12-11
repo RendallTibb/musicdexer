@@ -103,8 +103,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>526</width>
-           <height>74</height>
+           <width>464</width>
+           <height>78</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -294,25 +294,25 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actionBackup"/>
+   <addaction name="actionDirSelect"/>
    <addaction name="actionSync"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionBackup">
+  <action name="actionDirSelect">
    <property name="icon">
-    <iconset resource="res/musicdexer.qrc">
-     <normaloff>:/document-export-table.png</normaloff>:/document-export-table.png</iconset>
+    <iconset resource="../res/musicdexer.qrc">
+     <normaloff>:/folder-sound.png</normaloff>:/folder-sound.png</iconset>
    </property>
    <property name="text">
-    <string>Backup</string>
+    <string>DirSelect</string>
    </property>
    <property name="toolTip">
-    <string>Backup</string>
+    <string>Click to select your music collection directory.</string>
    </property>
   </action>
   <action name="actionSync">
    <property name="icon">
-    <iconset resource="res/musicdexer.qrc">
+    <iconset resource="../res/musicdexer.qrc">
      <normaloff>:/view-refresh.png</normaloff>:/view-refresh.png</iconset>
    </property>
    <property name="text">
@@ -324,7 +324,7 @@
   </action>
  </widget>
  <resources>
-  <include location="res/musicdexer.qrc"/>
+  <include location="../res/musicdexer.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -1,0 +1,46 @@
+Install
+
+The build steps below will do the job, but there are several different methods. This program has been tested on Kubuntu Precise 12.04 with Qt 4.8 and TagLib 1.7. Also tested on Windows 7 with Qt 5.3.2 and taglib 1.9.1.
+
+### Linux ###  
+
+Install required dependencies if not already installed.
+ - taglib
+ - Qt4 or later
+
+Then run:
+
+qmake
+make
+make install
+
+
+### Windows ###
+
+Install Qt with included MinGW - http://qt-project.org/
+Install CMake - http://www.cmake.org/
+(During install, have cmake added to the path for ease of use)
+Install a tar.gz extractor like 7-zip - http://www.7-zip.org/
+Download zlib compiled dll package - http://www.zlib.net/
+Download TagLib source - http://taglib.github.io/
+
+Just outside of the musicdexer source directory:
+  Extract zlib to a folder called zlib.
+  Extract the taglib until you have a folder like taglib-1.9.1
+
+Open the Qt command prompt from the start menu and cd to the extracted taglib folder (e.g., cd C:\Users\Username\Downloads\taglib-1.9.1). Then run the following three commands.
+
+cmake -G"MinGW Makefiles" -DCMAKE_BUILD_TYPE="release" -DCMAKE_INSTALL_PREFIX="../taglib" -DZLIB_INCLUDE_DIR="../zlib/include" -DZLIB_LIBRARY="../zlib/lib/zdll.lib" -DWITH_ASF=on -DWITH_MP4=on
+
+mingw32-make
+
+mingw32-make install
+
+Now change to the musidexer folder and compile with the following commands.
+
+cd ..\musicdexer
+qmake
+mingw32-make
+mingw32-make install
+
+Outside of the source directory, there should now be a musicdexer-release folder that contains musicdexer.exe along with all dlls required for it to fully function. In place of 'qmake', you can try 'cmake . -G"MinGW Makefiles"'.

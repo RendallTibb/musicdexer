@@ -6,7 +6,7 @@ cat <<EOF
   Name=Musidexer
   GenericName=Music Manager
   Comment=Music Collection Database Manager
-  TryExec=$1/bin/musicdexer
-  Exec=$1/bin/musicdexer
+  TryExec=$1/musicdexer
+  Exec=$1/musicdexer
   Categories=Audio;AudioVideo;
 EOF

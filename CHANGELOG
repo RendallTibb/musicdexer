@@ -1,0 +1,34 @@
+1.3.0 - 12/08/14 - Overhaul, More public-friendly
+ - Upgraded code to Qt5 while maintaining Qt4 compatibility.
+ - Switched from MySQL to SQLite. Removed database backup feature(Database location visible in status-bar on start-up).
+ - Added music directory selection and saved settings.
+ - Added sync progress dialogue.
+ - Improved sync performance.
+ - Added windows 7 support. Updated CMakeList.txt.
+ - Added some documentation and licensing.
+ - Removed KDevelop project in favor of cross-platform QtCreator.
+
+1.0.1 - 09/24/14 - Upload to GitHub
+ - Removed MySQL connection credentials from code
+ - Added README.md with minor install instructions.
+ 
+1.0.0 - 02/08/12 - Initial Release
+ - Created project and designed UI with search and TableView.
+ - Created test table in MySQL and added connection credentials to code.
+ - Added Basic Search feature using LIKE %..%.
+ - Added Clear feature(Returns entire database in TableView).
+ - Added table editing and data formatting.
+ - Created custom QSQLTableModel to format displayed data.
+ - Added Sync feature with substantial logic.
+ - Added Delete feature with prompts.
+ - Added Change feature with prompts.
+ - Added red color coded path for missing files.
+ - Added Browse by Directory feature.
+ - Lots of testing and bug fixes.
+ - Added Add-to feature
+ - Added additional search options.
+ - Bug fixes with Sync and Browse by Directory.
+ - Added ';' separator to Add-to for tag fields.
+ - Added MySQL database backup feature.
+ 
+ 0.0.0 - 08/21/11 - Project Start
